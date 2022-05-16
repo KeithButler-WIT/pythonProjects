@@ -1,0 +1,10 @@
+#+title: Readme
+
+This is a collection of various projects created be me to practice python.
+
+* Projects
+- Active Apps
+- Url Checker
+
+* Goal
+To learn the basic of python and familiarise myself with the syntax.
