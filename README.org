@@ -4,6 +4,7 @@ This is a collection of various projects created be me to practice python.
 
 * Projects
 - Active Apps
+- Battery Notifier
 - Url Checker
 - Cli Clock
 
