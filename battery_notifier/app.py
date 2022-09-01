@@ -3,7 +3,7 @@
 from plyer import notification, battery
 import time
 
-app_name, title = 'Battery Warning'
+app_name = title = 'Battery Warning'
 
 while True:
     if battery.status['isCharging'] == False and battery.status['percentage'] <= 20:
