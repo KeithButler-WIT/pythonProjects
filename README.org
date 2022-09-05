@@ -7,6 +7,14 @@ This is a collection of various projects created be me to practice python.
 - Battery Notifier
 - Url Checker
 - Cli Clock
+- Snake Game
+- File Manager
+
+* Planned Projects
+- [[https://www.udemy.com/course/try-django-1-10/][URL Shortener]]
+- [[https://simpleisbetterthancomplex.com/series/2017/09/04/a-complete-beginners-guide-to-django-part-1.html][Simple webpage with Django]]
+- Password Manager
+
 
 * Goal
 To learn the basic of python and familiarise myself with the syntax.
