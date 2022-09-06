@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+import json
+
 
 def main():
     while True:
@@ -7,10 +9,10 @@ def main():
             """
             Press a button
 
-            s: save
-            l: load
-            n: new counter
-            q: quit
+            s: save to text file
+            l: list all counters
+            n: add new counter
+            q: quit program
             """
         )
         run(input("enter a key: "))
@@ -23,6 +25,8 @@ def run(key):
             return save()
         case "l":
             return list()
+        case "L":
+            return load()
         case "n":
             return quit()
         case "q":
@@ -32,19 +36,28 @@ def run(key):
 
 
 counter_dict = {
-    "counter1": {"name": "actual name", "number": 10},
-    "counter2": {"name": "actual name 2", "number": 5},
+    0: {"name": "actual name", "number": 10},
+    1: {"name": "actual name 2", "number": 5},
 }
 
 
 def save():
-    d = counter_dict
-    with open("counter.txt", "w") as f:
-        f.write(repr(d))
+    json.dump(counter_dict, open("counter.txt", "w"))
+    # d = counter_dict
+    # with open("counter.txt", "w") as f:
+    #     f.write(repr(d))
+
+    print("Counter dictionary saved")
+
+
+def load():
+    counter_dict = json.load(open("counter.txt"))
+    # with open("counter.txt") as f:
+    #     counter_dict = f.readline()
 
 
 def list():
-    pass
+    print(counter_dict.values())
 
 
 ## CODE LAYOUT ##
