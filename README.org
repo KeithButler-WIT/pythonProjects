@@ -14,6 +14,7 @@ This is a collection of various projects created be me to practice python.
 - [[https://www.udemy.com/course/try-django-1-10/][URL Shortener]]
 - [[https://simpleisbetterthancomplex.com/series/2017/09/04/a-complete-beginners-guide-to-django-part-1.html][Simple webpage with Django]]
 - Password Manager / Generator
+- “site updated” notification system
 - Counter app - reading and writing variables to a file
 
 
