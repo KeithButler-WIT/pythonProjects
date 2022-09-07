@@ -58,7 +58,7 @@ def counterPick():
             print("No counter matches that number")
 
 
-# NOTE this kinda works but double counts because it does both press and release
+# NOTE kinda works but double counts because it does both press and release
 def counterRun():
     counterNum = counterPick()
     print("Now counting")
@@ -101,7 +101,9 @@ counter_dict = {
 
 
 def deleteCounter():
-    pass
+    print("Pick a counter to delete")
+    counterNum = counterPick()
+    del counter_dict[counterNum]
 
 
 def save():
