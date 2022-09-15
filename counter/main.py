@@ -4,8 +4,6 @@ import json
 from pynput.keyboard import Key, Listener, Events
 from os.path import exists as file_exists
 
-counter_file = "counter.txt"
-
 
 def main():
     load()
@@ -21,6 +19,7 @@ def mainMenu():
             s: save to text file
             l: list all counters
             c: count
+            d: delete a counter
             n: add new counter
             q: quit program
             """
@@ -75,6 +74,7 @@ def counterRun():
                 return
 
 
+# NOTE different attempt
 # def counterRun():
 #     listCounters()
 #     counterNum = counterPick()
@@ -106,6 +106,9 @@ def deleteCounter():
     del counter_dict[counterNum]
 
 
+counter_file = "counter.txt"
+
+
 def save():
     json.dump(counter_dict, open(counter_file, "w"), indent=4)
     print("Counter dictionary saved")
@@ -119,21 +122,14 @@ def load():
             print("File created")
 
 
+def createCounter():
+    pass
+
+
 def listCounters():
     print(json.dumps(counter_dict, indent=4))
     # print(counter_dict.values())
 
-
-## CODE LAYOUT ##
-# if enter pressed:
-#   counter++
-
-#
-## dictionary layout ##
-# counter_dict = {
-#     "counter1": {"name": "actual name", "number": 10},
-#     "counter2": {"name": "actual name 2", "number": 5},
-# }
 
 if __name__ == "__main__":
     main()
