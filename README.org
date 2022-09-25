@@ -16,6 +16,7 @@ This is a collection of various projects created be me to practice python.
 - Password Manager / Generator
 - “site updated” notification system
 - Counter app - reading and writing variables to a file
+- Pathfinding algorithm visualiser with Django
 
 
 * Goal
