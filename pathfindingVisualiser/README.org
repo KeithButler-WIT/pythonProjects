@@ -6,5 +6,5 @@
 * Reasons for making
 * How to run
 * Resources
-[[https://docs.djangoproject.com/en/4.1/intro/tutorial01/][Writing your first Django app, part 1 | Django documentation | Django]]
-[[https://www.w3schools.com/django/][Django Tutorial]]
+- [[https://docs.djangoproject.com/en/4.1/intro/tutorial01/][Writing your first Django app, part 1 | Django documentation | Django]]
+- [[https://www.w3schools.com/django/][Django Tutorial]]
