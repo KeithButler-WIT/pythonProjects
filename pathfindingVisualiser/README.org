@@ -8,3 +8,8 @@
 * Resources
 - [[https://docs.djangoproject.com/en/4.1/intro/tutorial01/][Writing your first Django app, part 1 | Django documentation | Django]]
 - [[https://www.w3schools.com/django/][Django Tutorial]]
+- [[https://www.youtube.com/watch?v=QNpUN8gBeLY][Python Pathfinding Vizualisation - YouTube]]
+- [[https://www.youtube.com/watch?v=JtiK0DOeI4A][A* Pathfinding Visualization Tutorial - Python A* Path Finding Tutorial - You...]]
+- [[https://www.youtube.com/watch?v=hettiSrJjM4][Python Path Finding Tutorial - Breadth First Search Algorithm - YouTube]]
+- [[https://www.youtube.com/watch?v=0XV5Topevhs][Python Programming: Shortest Path Pathfinding Algorithm In 5 Minutes - YouTube]]
+- [[https://www.youtube.com/watch?v=msttfIHHkak][Pathfinding Visualizer Tutorial (software engineering project) - YouTube]]
