@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 
 import pygame
-import math
-from queue import PriorityQueue
 
 RED = (255,0,0)
 GREEN = (0,255,0)

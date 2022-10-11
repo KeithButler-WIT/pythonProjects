@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 
 import pygame
-import math
-from queue import PriorityQueue
 from grid import *
-from aStar import *
+# from aStar import *
+from dijkstra import *
 
 WIDTH = 800
 WIN = pygame.display.set_mode((WIDTH, WIDTH))
