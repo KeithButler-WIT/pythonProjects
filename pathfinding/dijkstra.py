@@ -27,9 +27,6 @@ def algorithm(draw, grid, start, end):
     # Distance from start to current node
     g_score = {spot: float("inf") for row in grid for spot in row}
     g_score[start] = 0
-    # g_score + h_score
-    f_score = {spot: float("inf") for row in grid for spot in row}
-    f_score[start] = start.get_pos()
     open_set_hash = {start}
     while not open_set.empty():
         for event in pygame.event.get():
@@ -49,10 +46,9 @@ def algorithm(draw, grid, start, end):
             if temp_g_score < g_score[neighbour]:
                 came_from[neighbour] = current
                 g_score[neighbour] = temp_g_score
-                f_score[neighbour] = temp_g_score
                 if neighbour not in open_set_hash:
                     count += 1
-                    open_set.put((f_score[neighbour], count, neighbour))
+                    open_set.put((g_score[neighbour], count, neighbour))
                     open_set_hash.add(neighbour)
                     neighbour.make_open()
         draw()
