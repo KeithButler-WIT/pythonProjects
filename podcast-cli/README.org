@@ -1,0 +1,32 @@
+#+title: Readme
+
+* TODO Learn how to get started
+* TODO Layout
+** Searching for a podcast
+#+begin_example shell
+podcast-cli podcast-name
+#+end_example
+
+** Downloading a podcast
+#+begin_example shell
+podcast-cli -d
+#+end_example
+
+** Viewing and playing a recent podcast
+*** Input
+#+begin_example shell
+podcast-cli -h
+#+end_example
+
+*** Output
+#+begin_example shell
+1. Podcast 1
+1. Podcast 1
+#+end_example
+
+* TODO Features
+- [ ] Load podcasts from txt file (for easy importing)
+- [ ] Save podcasts to txt file (for easy exporting)
+- [ ] Search Podcasts by name
+- [ ] Search episodes by name
+- [ ] Download episodes
