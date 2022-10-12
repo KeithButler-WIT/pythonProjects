@@ -2,12 +2,15 @@
 
 import pygame
 from grid import *
-# from aStar import *
-from dijkstra import *
+from aStar import *
+# from dijkstra import *
 
 WIDTH = 800
 WIN = pygame.display.set_mode((WIDTH, WIDTH))
 pygame.display.set_caption("A* Pathfinding")
+
+WHITE = (255, 255, 255)
+BLACK = (0, 0, 0)
 
 
 def get_clicked_pos(pos, rows, width):
@@ -18,8 +21,7 @@ def get_clicked_pos(pos, rows, width):
     col = x//gap
     return row, col
 
-
-def main(win, width):
+def start_game(win, width):
     ROWS = 50
     grid = make_grid(ROWS, width)
     start = None
@@ -73,4 +75,33 @@ def main(win, width):
     pygame.quit()
 
 
-main(WIN, WIDTH)
+def button(x,y,w,h):
+    pos = pygame.mouse.get_pos()
+    click = pygame.mouse.get_pressed()
+
+    if pos[0] > x and pos[0] < x + w and pos[1] > y and pos[1] < y + h:
+       if click[0] == 1:
+         start_game(WIN, WIDTH)
+    pygame.draw.rect(WIN, WHITE, (x,y,w,h))
+
+
+def main():
+    menu()
+
+
+def menu():
+ while True:
+
+    WIN.blit(WIN, (0, 0))
+
+
+    button(20,50,80,40)
+
+    for event in pygame.event.get():
+       if event.type == pygame.QUIT:
+           pygame.quit()
+    pygame.display.update()
+
+
+if __name__ == "__main__":
+    main()
