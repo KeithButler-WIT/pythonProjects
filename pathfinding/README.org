@@ -7,4 +7,4 @@
 [[file:images/aStarExample.png][aStar]]
 
 * Dijkstra
-[[pdf:images/dijkstraExample.png][Dijkstra]]
+[[file:images/dijkstraExample.png][Dijkstra]]
