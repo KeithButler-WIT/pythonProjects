@@ -7,7 +7,9 @@ from aStar import *
 
 WIDTH = 800
 WIN = pygame.display.set_mode((WIDTH, WIDTH))
-pygame.display.set_caption("A* Pathfinding")
+pygame.display.set_caption("Pathfinding Visualiser using pygame")
+# pygame.display.set_caption("A* Pathfinding")
+# pygame.display.set_caption("Dijkstra Pathfinding")
 
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
