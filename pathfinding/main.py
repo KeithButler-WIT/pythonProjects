@@ -3,7 +3,7 @@
 import pygame
 from grid import *
 from aStar import *
-# from dijkstra import *
+from dijkstra import *
 
 WIDTH = 800
 WIN = pygame.display.set_mode((WIDTH, WIDTH))
@@ -23,7 +23,7 @@ def get_clicked_pos(pos, rows, width):
     col = x//gap
     return row, col
 
-def start_game(win, width):
+def start_game(win, width, algo):
     ROWS = 50
     grid = make_grid(ROWS, width)
     start = None
@@ -66,7 +66,10 @@ def start_game(win, width):
                     for row in grid:
                         for spot in row:
                             spot.update_neighbours(grid)
-                    algorithm(lambda: draw(win, grid, ROWS, width), grid, start, end)   #having lambda lets you run the function inside the function
+                    if algo == "aStar":
+                        astar(lambda: draw(win, grid, ROWS, width), grid, start, end)   #having lambda lets you run the function inside the function
+                    elif algo == "dijkstra":
+                        dijkstra(lambda: draw(win, grid, ROWS, width), grid, start, end)   #having lambda lets you run the function inside the function
 
                 if event.key == pygame.K_c:
                     start = None
@@ -77,13 +80,15 @@ def start_game(win, width):
     pygame.quit()
 
 
-def button(x,y,w,h):
+def button(x,y,w,h,algo):
     pos = pygame.mouse.get_pos()
     click = pygame.mouse.get_pressed()
 
     if pos[0] > x and pos[0] < x + w and pos[1] > y and pos[1] < y + h:
-       if click[0] == 1:
-         start_game(WIN, WIDTH)
+       if click[0] == 1 and algo == "aStar":
+         start_game(WIN, WIDTH, "aStar")
+       if click[0] == 1 and algo == "dijkstra":
+         start_game(WIN, WIDTH, "dijkstra")
     pygame.draw.rect(WIN, WHITE, (x,y,w,h))
 
 
@@ -97,7 +102,8 @@ def menu():
     WIN.blit(WIN, (0, 0))
 
 
-    button(20,50,80,40)
+    button(WIDTH/4,WIDTH/2 + WIDTH/4,80,40,"aStar")
+    button(WIDTH/4 + WIDTH/3,WIDTH/2 + WIDTH/4,80,40,"dijkstra")
 
     for event in pygame.event.get():
        if event.type == pygame.QUIT:

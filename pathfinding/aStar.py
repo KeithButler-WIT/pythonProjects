@@ -19,7 +19,7 @@ def h(p1, p2):
     return abs(x1-x2) + abs(y1-y2)
 
 
-def algorithm(draw, grid, start, end):
+def astar(draw, grid, start, end):
     count = 0
     open_set = PriorityQueue()   # returns the smallest value in the list
     open_set.put((0, count, start))
