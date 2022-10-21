@@ -137,7 +137,9 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 ## Roadmap
 
 - [ ] Implement another algorithm
-- [ ] Title on main menu
+- [ ] Updated main menu
+    - [ ] Title on main menu
+        - [ ] wobble animation
 
 See the [open issues](https://github.com/keithbutler-WIT/pythonProjects/issues) for a full list of proposed features (and known issues).
 
