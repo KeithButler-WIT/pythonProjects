@@ -30,11 +30,11 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
+  <!-- <a href="https://github.com/github_username/repo_name"> -->
+  <!--   <img src="images/logo.png" alt="Logo" width="80" height="80"> -->
+  <!-- </a> -->
 
-<h3 align="center">project_title</h3>
+<h3 align="center">Pathfinder visualiser using pygame</h3>
 
   <p align="center">
     project_description
@@ -179,7 +179,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 <!-- ## Contact -->
 
-<!-- Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com -->
+Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
 
 <!-- Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name) -->
 
@@ -215,5 +215,5 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 [product-screenshot]: images/screenshot.png
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
-[python.com]: https://img.shields.io/badge/python-0769AD?style=for-the-badge&logo=python&logoColor=white
+[python.com]: https://img.shields.io/badge/Python-0769AD?style=for-the-badge&logo=python&logoColor=white
 [python-url]: https://python.com 
