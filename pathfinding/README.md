@@ -186,7 +186,7 @@ Keith Butler - keith@keithbutler.xyz <!-- - [@twitter_handle](https://twitter.co
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* [pythonprogramming.net](https://pythonprogramming.net/pygame-python-3-part-1-intro/)
+* [pygame tutorial on pythonprogramming.net](https://pythonprogramming.net/pygame-python-3-part-1-intro/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -207,7 +207,5 @@ Keith Butler - keith@keithbutler.xyz <!-- - [@twitter_handle](https://twitter.co
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/keith-a-butler
 [product-screenshot]: images/screenshot.png
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
 [Python.com]: https://img.shields.io/badge/Python-0769AD?style=for-the-badge&logo=python&logoColor=white
 [Python-url]: https://python.com 
