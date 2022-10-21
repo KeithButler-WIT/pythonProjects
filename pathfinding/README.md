@@ -37,7 +37,7 @@
 <h3 align="center">Pathfinder visualiser using pygame</h3>
 
   <p align="center">
-    project_description
+    A python based application to view various pathfinding algorithms using pygame.
     <br />
     <a href="https://github.com/keithbutler-WIT/pythonProjects"><strong>Explore the docs »</strong></a>
     <br />
@@ -83,7 +83,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `keithbutler-WIT`, `pythonProjects`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `keithbutler-WIT`, `pythonProjects`, `twitter_handle`, `keith-a-butler`, `email_client`, `email`, `project_title`, `project_description`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -207,7 +207,7 @@ Keith Butler - keith@keithbutler.xyz <!-- - [@twitter_handle](https://twitter.co
 [license-shield]: https://img.shields.io/github/license/keithbutler-WIT/pythonProjects.svg?style=for-the-badge
 [license-url]: https://github.com/keithbutler-WIT/pythonProjects/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
+[linkedin-url]: https://linkedin.com/in/keith-a-butler
 [product-screenshot]: images/screenshot.png
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
