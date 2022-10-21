@@ -190,9 +190,7 @@ Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* [https://pythonprogramming.net/pygame-python-3-part-1-intro/](pythonprogramming.net)
-* []()
-* []()
+* [pythonprogramming.net](https://pythonprogramming.net/pygame-python-3-part-1-intro/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
