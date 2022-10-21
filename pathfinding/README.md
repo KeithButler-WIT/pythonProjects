@@ -94,6 +94,7 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 ### Built With
 
 * [![JQuery][JQuery.com]][JQuery-url]
+* [![Python][Python.com]][Python-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -179,7 +180,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 <!-- ## Contact -->
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Keith Butler - keith@keithbutler.xyz <!-- - [@twitter_handle](https://twitter.com/twitter_handle) -->
 
 <!-- Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name) -->
 
@@ -213,5 +214,5 @@ Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_
 [product-screenshot]: images/screenshot.png
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
-[python.com]: https://img.shields.io/badge/Python-0769AD?style=for-the-badge&logo=python&logoColor=white
-[python-url]: https://python.com 
+[Python.com]: https://img.shields.io/badge/Python-0769AD?style=for-the-badge&logo=python&logoColor=white
+[Python-url]: https://python.com 
