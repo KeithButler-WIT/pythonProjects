@@ -81,7 +81,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![aStar Pathfinding Screen Shot][aStar-screenshot]](images/aStarExample.png)
 
 Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `keithbutler-WIT`, `pythonProjects`, `twitter_handle`, `keith-a-butler`, `email_client`, `email`, `project_title`, `project_description`
 
@@ -138,8 +138,6 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 - [ ] Implement another algorithm
 - [ ] Updated main menu
-    - [ ] Title on main menu
-        - [ ] wobble animation
 
 See the [open issues](https://github.com/keithbutler-WIT/pythonProjects/issues) for a full list of proposed features (and known issues).
 
@@ -208,6 +206,6 @@ Keith Butler - keith@keithbutler.xyz <!-- - [@twitter_handle](https://twitter.co
 [license-url]: https://github.com/keithbutler-WIT/pythonProjects/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/keith-a-butler
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: images/aStarExample.png
 [Python.com]: https://img.shields.io/badge/Python-0769AD?style=for-the-badge&logo=python&logoColor=white
 [Python-url]: https://python.com 
