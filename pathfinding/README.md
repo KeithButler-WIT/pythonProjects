@@ -82,8 +82,8 @@
 ## About The Project
 
 [![aStar Pathfinding Screen Shot][aStar-screenshot]](images/aStarExample.png)
+[![Dijkstra Pathfinding Screen Shot][dijkstra-screenshot]](images/dijkstraExample.png)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `keithbutler-WIT`, `pythonProjects`, `twitter_handle`, `keith-a-butler`, `email_client`, `email`, `project_title`, `project_description`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -206,6 +206,7 @@ Keith Butler - keith@keithbutler.xyz <!-- - [@twitter_handle](https://twitter.co
 [license-url]: https://github.com/keithbutler-WIT/pythonProjects/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/keith-a-butler
-[product-screenshot]: images/aStarExample.png
+[aStar-screenshot]: images/aStarExample.png
+[dijkstra-screenshot]: images/dijkstraExample.png
 [Python.com]: https://img.shields.io/badge/Python-0769AD?style=for-the-badge&logo=python&logoColor=white
 [Python-url]: https://python.com 
