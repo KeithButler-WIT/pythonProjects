@@ -7,9 +7,6 @@ from dijkstra import *
 
 WIDTH = 800
 WIN = pygame.display.set_mode((WIDTH, WIDTH))
-pygame.display.set_caption("Pathfinding Visualiser using pygame")
-# pygame.display.set_caption("A* Pathfinding")
-# pygame.display.set_caption("Dijkstra Pathfinding")
 
 
 WHITE = (255, 255, 255)
@@ -20,11 +17,19 @@ GREEN = (0, 255, 0)
 pygame.init()
 
 def get_clicked_pos(pos, rows, width):
-    gap = width //rows
+    """
+    Calculates the position on the grid was clicked
+
+    :params pos: Position of the mouse
+    :params rows: Number of rows of grid squares on the screen
+    :params width: width of each grid square
+    :return: The row and col the was clicked
+    """
+    gap = width // rows
     y,x = pos
 
-    row = y//gap
-    col = x//gap
+    row = y // gap
+    col = x // gap
     return row, col
 
 def start_game(win, width, algo):
@@ -37,7 +42,7 @@ def start_game(win, width, algo):
     while run:
         draw(win, grid, ROWS, width)
         for event in pygame.event.get():
-            if event.type ==pygame.QUIT:
+            if event.type == pygame.QUIT:
                 run = False
             if started:
                 continue
@@ -75,6 +80,9 @@ def start_game(win, width, algo):
                     elif algo == "dijkstra":
                         dijkstra(lambda: draw(win, grid, ROWS, width), grid, start, end)   #having lambda lets you run the function inside the function
 
+                if event.key == pygame.K_ESCAPE:
+                    menu()
+
                 if event.key == pygame.K_c:
                     start = None
                     end = None
@@ -84,20 +92,42 @@ def start_game(win, width, algo):
     pygame.quit()
 
 
-def text_objects(text, font):
-    TextSurface = font.render(text, True, BLACK)
+def text_objects(text, font, color=BLACK):
+    """
+    Creates a text object with inputted text and font
+
+    :param text: Text to be returned
+    :param font: The font for the text to use
+    :param color: The color for the text to be
+    :returns: TextSurface, TextSurface.get_rect()
+    """
+    TextSurface = font.render(text, True, color)
     return TextSurface, TextSurface.get_rect()
 
 
 def button(msg, x, y, w, h, ic, ac, algo):
+    """
+    Draw a button with text to the screen
+
+    :param msg: A string to be displayed on the button
+    :param x: x position on the screen
+    :param y: y position on the screen
+    :param w: Width of the button
+    :param h: Height of the button
+    :param ic: Buttons colour when not hovered over
+    :param ac: Buttons colour when hovered over
+    :param algo: A string of the pathfinding algorithm name
+    """
     mouse_pos = pygame.mouse.get_pos()
     click = pygame.mouse.get_pressed()
 
     if mouse_pos[0] > x and mouse_pos[0] < x + w and mouse_pos[1] > y and mouse_pos[1] < y + h:
         pygame.draw.rect(WIN, ac,(x,y,w,h))
         if click[0] == 1 and algo == "aStar":
+            pygame.display.set_caption("A* Pathfinding")
             start_game(WIN, WIDTH, "aStar")
         if click[0] == 1 and algo == "dijkstra":
+            pygame.display.set_caption("Dijkstra Pathfinding")
             start_game(WIN, WIDTH, "dijkstra")
     else:
         pygame.draw.rect(WIN, ic,(x,y,w,h))
@@ -108,37 +138,29 @@ def button(msg, x, y, w, h, ic, ac, algo):
     WIN.blit(textSurf, textRect)
 
 
-# def button_old(x,y,w,h,algo):
-#     pos = pygame.mouse.get_pos()
-#     click = pygame.mouse.get_pressed()
-
-#     smallText = pygame.font.Font("freesansbold.ttf",20)
-#     textSurf, textRect = text_objects("GO!", smallText)
-#     textRect.center = ( (w+(h/2)), (450+(50/2)) )
-#     WIN.blit(textSurf, textRect)
-
-#     if pos[0] > x and pos[0] < x + w and pos[1] > y and pos[1] < y + h:
-#         pygame.draw.rect(WIN, WHITE, (x,y,w,h))
-
-
 def main():
+    """Runs the starting components of the program"""
     menu()
 
 
 def menu():
- while True:
+    """Displays the main menu and changes the caption"""
+    pygame.display.set_caption("Pathfinding Visualiser using pygame")
+    WIN.fill(BLACK)
 
-    WIN.blit(WIN, (0, 0))
+    while True:
+
+        WIN.blit(WIN, (0, 0))
 
 
-    button("aStar", WIDTH/4, WIDTH/2 + WIDTH/4, 80, 40, WHITE, GREEN,  "aStar")
-    button("Dijkstra", WIDTH/4 + WIDTH/3,WIDTH/2 + WIDTH/4, 80, 40, WHITE, GREEN,  "dijkstra")
-    # button(WIDTH/4 + WIDTH/3,WIDTH/2 + WIDTH/4,80,40,"dijkstra")
+        button("aStar", WIDTH/4, WIDTH/2 + WIDTH/4, 80, 40, WHITE, GREEN,  "aStar")
+        button("Dijkstra", WIDTH/4 + WIDTH/3,WIDTH/2 + WIDTH/4, 80, 40, WHITE, GREEN,  "dijkstra")
+        # button(WIDTH/4 + WIDTH/3,WIDTH/2 + WIDTH/4,80,40,"dijkstra")
 
-    for event in pygame.event.get():
-       if event.type == pygame.QUIT:
-           pygame.quit()
-    pygame.display.update()
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT or event.type == pygame.K_ESCAPE:
+                pygame.quit()
+        pygame.display.update()
 
 
 if __name__ == "__main__":
