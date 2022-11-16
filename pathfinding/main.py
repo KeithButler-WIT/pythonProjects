@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
 import pygame
+import os
+
 from grid import *
 from aStar import *
 from dijkstra import *
@@ -11,6 +13,7 @@ WIN = pygame.display.set_mode((WIDTH, WIDTH))
 
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
+GRAY = (150, 150, 150)
 RED = (255, 0, 0)
 GREEN = (0, 255, 0)
 
@@ -19,6 +22,7 @@ pygame.init()
 def get_clicked_pos(pos, rows, width):
     """
     Calculates the position on the grid was clicked
+    (Window is assumed to be square)
 
     :params pos: Position of the mouse
     :params rows: Number of rows of grid squares on the screen
@@ -148,18 +152,26 @@ def menu():
     pygame.display.set_caption("Pathfinding Visualiser using pygame")
     WIN.fill(BLACK)
 
+    # TODO: Display image as background
+    background = pygame.image.load(os.path.join("images", "pathfinder-bw.png"))
+    WIN.blit(background, (0,0))
+
+    # Display an rect at the top of the screen with a 50px margin either size
+    # pygame.draw.rect(WIN, WHITE, (50, 0, int(WIDTH-100), int(WIDTH/6)))
+
     while True:
 
         WIN.blit(WIN, (0, 0))
 
 
-        button("aStar", WIDTH/4, WIDTH/2 + WIDTH/4, 80, 40, WHITE, GREEN,  "aStar")
-        button("Dijkstra", WIDTH/4 + WIDTH/3,WIDTH/2 + WIDTH/4, 80, 40, WHITE, GREEN,  "dijkstra")
+        button("aStar", WIDTH/4, WIDTH/2 + WIDTH/4, 80, 40, WHITE, GRAY,  "aStar")
+        button("Dijkstra", WIDTH/4 + WIDTH/3,WIDTH/2 + WIDTH/4, 80, 40, WHITE, GRAY,  "dijkstra")
         # button(WIDTH/4 + WIDTH/3,WIDTH/2 + WIDTH/4,80,40,"dijkstra")
 
         for event in pygame.event.get():
             if event.type == pygame.QUIT or event.type == pygame.K_ESCAPE:
                 pygame.quit()
+
         pygame.display.update()
 
 
