@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
-import pygame
 import os
+import pygame
 
 from grid import *
 from aStar import *
@@ -69,7 +69,7 @@ def start_game(win, width, algo):
                 row, col = get_clicked_pos(pos, ROWS, width)
                 spot = grid[row][col]
                 spot.reset()
-                if spot ==start:
+                if spot == start:
                     start = None
                 elif spot == end:
                     end = None
@@ -152,7 +152,7 @@ def menu():
     pygame.display.set_caption("Pathfinding Visualiser using pygame")
     WIN.fill(BLACK)
 
-    # TODO: Display image as background
+    # Displays an image as the background
     background = pygame.image.load(os.path.join("images", "pathfinder-bw.png"))
     WIN.blit(background, (0,0))
 
