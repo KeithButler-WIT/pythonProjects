@@ -7,6 +7,10 @@ app_name = title = "Battery Warning"
 
 
 def main():
+    """
+    Checks if the battery drops below a certain number
+    Notifies the user with a pop when it does
+    """
     while True:
         if battery.status["isCharging"] == False and battery.status["percentage"] <= 20:
             notification.notify(

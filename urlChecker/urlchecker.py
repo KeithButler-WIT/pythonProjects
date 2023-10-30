@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+#! /usr/bin/env nix-shell
+#! nix-shell -i python --packages python pythonPackages.requests pythonPackages.click
+
 
 import requests
 import click
